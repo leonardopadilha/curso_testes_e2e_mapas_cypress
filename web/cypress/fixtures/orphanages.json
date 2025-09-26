@@ -1,0 +1,18 @@
+{
+  "create": {
+    "name": "Lar Esperança",
+    "description": "O Lar Esperança acolhe crianças em situação de vulnerabilidade, oferecendo moradia, alimentação, educação básica e atividades recreativas que incentivam o desenvolvimento social, emocional e intelectual.",
+    "opening_hours": "Monday to Friday, 08:00 AM to 05:00 PM",
+    "open_on_weekends": "Não"
+  },
+  "other": {
+    "name": "Casa da Criança Feliz",
+    "description": "A Casa da Criança Feliz é uma instituição sem fins lucrativos que promove o bem-estar de crianças órfãs, oferecendo apoio psicológico, reforço escolar, oficinas culturais e acesso a serviços de saúde em parceria com voluntários.",
+    "opening_hours": "Monday to Saturday, 09:00 AM to 06:00 PM"
+  },
+  "other2": {
+    "name": "Abrigo São José",
+    "description": "O Abrigo São José atende adolescentes em situação de abandono, proporcionando acolhimento seguro, alimentação, acompanhamento pedagógico e programas de capacitação profissional para promover autonomia e inclusão social.",
+    "opening_hours": "Every day, 07:00 AM to 08:00 PM"
+  }
+}
