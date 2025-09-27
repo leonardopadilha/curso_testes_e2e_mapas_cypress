@@ -82,10 +82,16 @@ export default function OrphanagesMap() {
       });
   }, []);
 
+  const setLocalStorageLocation = (latitude, longitude) => {
+    localStorage.setItem("hope-qa:latitude", latitude);
+    localStorage.setItem("hope-qa:longitude", longitude);
+  }
+
   const Markers = () => {
     useMapEvents({
       click(e) {
         setSelectedPosition([e.latlng.lat, e.latlng.lng]);
+        setLocalStorageLocation(e.latlng.lat, e.latlng.lng)
       },
     });
     return selectedPosition ? (
@@ -185,8 +191,8 @@ export default function OrphanagesMap() {
 
     data.append("name", name);
     data.append("description", description);
-    data.append("latitude", String(localStorage.getItem("hope:latitude")));
-    data.append("longitude", String(localStorage.getItem("hope:longitude")));
+    data.append("latitude", localStorage.getItem("hope-qa:latitude"));
+    data.append("longitude", localStorage.getItem("hope-qa:longitude"));
     data.append("opening_hours", opening_hours);
     data.append("open_on_weekends", String(open_on_weekends));
 
